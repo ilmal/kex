@@ -1,5 +1,5 @@
-tensorflow>=2.15
+tensorflow==2.15
 tensorflow-datasets
-numpy
+numpy<2
 matplotlib
 scikit-learn

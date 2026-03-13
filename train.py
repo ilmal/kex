@@ -151,7 +151,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--epochs",
         type=int,
-        default=10,
+        default=3,
         help="Number of training epochs (default: 10)",
     )
     parser.add_argument(

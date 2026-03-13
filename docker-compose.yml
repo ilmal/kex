@@ -1,0 +1,13 @@
+services:
+  train:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./checkpoints:/app/checkpoints
+      - ./saved_models:/app/saved_models
+      - ./logs:/app/logs
+    # Override default args with: docker compose run train --split digits --epochs 20
+    # Examples:
+    #   docker compose up                                   # balanced split, 10 epochs
+    #   docker compose run train --split digits --epochs 20
+    #   docker compose run train --split letters --batch-size 256 --lr 1e-3
